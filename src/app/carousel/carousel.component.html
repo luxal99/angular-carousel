@@ -1,0 +1,14 @@
+
+<!--<button class="left" (click)="change('right')">left</button>-->
+<!--<button class="right" (click)="change('left')">right</button>-->
+<div
+  class="wrapper"
+>
+  <div
+    class="inner"
+    *ngFor="let img of _listOfImages; let i = index"
+    [@animateCarousel]="slideControl[i]"
+  >
+    <img [src]="img" />
+  </div>
+</div>
